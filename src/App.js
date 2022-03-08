@@ -40,7 +40,7 @@ function App() {
 
 function Contacts(){
   const contactsRef = db.collection('contact');
-  const [contacts, loadingContacts] = useCollectionData(contactsRef, {
+  const [contacts] = useCollectionData(contactsRef, {
     idField: "id"
   });
   return (
