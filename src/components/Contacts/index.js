@@ -1,32 +1,28 @@
 import React from 'react';
 
-import './index.css';
+import './index.scss';
 
 import Contact from '../Contact';
-import db from '../../firebase.js';
-
-import {useCollectionData} from "react-firebase-hooks/firestore";
-
-import {orderBy, query, collection} from 'firebase/firestore';
 
 import Box from '@mui/material/Box';
+import { Typography } from '@mui/material';
 
-const Contacts = () => {
-    const contactsRef = collection(db, 'contact'); 
-    const contactsQuery = query(contactsRef, orderBy('order'));
-    console.log(contactsQuery);
-    const [contacts] = useCollectionData(contactsQuery, {
-      idField: "id"
-    });
+const Contacts = (props) => {
+
+    const contacts = props.contacts;
+    
     return (
       <>
+        <Typography variant='h5'>
+          CONTACT
+        </Typography>
         <Box
           sx={{
             display: 'flex',
-            flexDirection: 'column'
+            flexDirection: 'row',
+            flexWrap: 'wrap',
           }}
           >
-        <h1>CONTACT</h1>
           {contacts && contacts.map(contact => <Contact key={contact.id} contact={contact} />)} 
         </Box>
       </>
