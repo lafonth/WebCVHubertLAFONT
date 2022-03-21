@@ -1,3 +1,8 @@
+# WEB CV HUBERT LAFONT
+
+My first usage of firebase as backend. 
+I keep learning React and Firebase through this project.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
