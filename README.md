@@ -3,6 +3,13 @@
 My first usage of firebase as backend. 
 I keep learning React and Firebase through this project.
 
+Usage of Firestore and firebase Hosting
+
+Website available here: https://web-cv-hubert-lafont.web.app/
+Still undercontruction
+
+I plan to integrate google analytics in this project thanks to firebase.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
